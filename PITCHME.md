@@ -1,11 +1,15 @@
-@title[Introduction]
-
-##### <span style="font-family:Helvetica Neue; font-weight:bold; color:#f46f25">Magento 2</span>
+@title[Title]
 
 ## Zero Downtime 
 ## Deployments for Everyone
 
 <span style="font-family:Helvetica Neue; font-weight:bold;">By Juan Alonso - <span style="color:#f46f25;"> @Jalogut</span>
+
+---
+
+<br>
+
+### Desployments == Breaking Live Server 💥
 
 ---
 @title[Agenda 1]
@@ -16,6 +20,7 @@
 * <span style="opacity: 0.2;">Right deployment</span>
 * <span style="opacity: 0.2;">Zero Downtime</span>
 * <span style="opacity: 0.2;">Build Pipeline</span>
+* <span style="opactity: 0.2;">M2 Deployer-Plus</span>
 * <span style="opacity: 0.2;">CI/CD</span>
 
 @fa[arrow-down]
@@ -41,6 +46,13 @@
 #### Happy
 ![Comic happy](assets/img/rage_comic/happy.jpg)
 
+---
+@title[M2 Deploys]
+
+<br>
+
+### What about M2?
+
 +++?image=assets/img/keep-calm-deploys.png
 @title[M2 Commands]
 
@@ -50,10 +62,12 @@
 
 +++
 @title[Something wrong]
+#### Getting crazy
 ![Comic crazy](assets/img/rage_comic/crazy.jpg)
 
 +++
 @title[Kill Magento]
+#### Want to kill Magento
 ![Comic kill](assets/img/rage_comic/kill-magento.jpg)
 
 ---
@@ -65,6 +79,7 @@
 * <span style="opacity: 0.2;">Right deployment</span>
 * <span style="opacity: 0.2;">Zero Downtime</span>
 * <span style="opacity: 0.2;">Build Pipeline</span>
+* <span style="opactity: 0.2;">M2 Deployer-Plus</span>
 * <span style="opacity: 0.2;">CI/CD</span>
 
 @fa[arrow-down]
@@ -95,6 +110,7 @@
 * **Right deployment**
 * <span style="opacity: 0.2;">Zero Downtime</span>
 * <span style="opacity: 0.2;">Build Pipeline</span>
+* <span style="opactity: 0.2;">M2 Deployer-Plus</span>
 * <span style="opacity: 0.2;">CI/CD</span>
 
 @fa[arrow-down]
@@ -108,9 +124,11 @@
 <li class="fragment">etc/config.php in VCS</li>
 <li class="fragment">~~etc/env.php~~ **NOT** in VCS</li>
 <li class="fragment">~~vendor~~ **NOT** in VCS</li>
+<br>
+<li class="fragment">Tutorial: [https://dev.to/jalogut -> Proper Magento 2 Composer Setup](https://dev.to/jalogut/proper-magento-2-composer-setup-40dm)</li>
 </ul>
 
-Tutorial: [https://dev.to/jalogut -> Proper Magento 2 Composer Setup](https://dev.to/jalogut/proper-magento-2-composer-setup-40dm)
+
 
 +++
 @title[Current live]
@@ -143,10 +161,9 @@ Tutorial: [https://dev.to/jalogut -> Proper Magento 2 Composer Setup](https://de
 ![Shared Data](assets/img/release_symlink_4.png)
 
 +++
+@title[Deployment Tools]
 
-@title[Tools]
-
-#### Tools
+#### Deployment Tools
 
 <br>
 
@@ -155,18 +172,14 @@ Tutorial: [https://dev.to/jalogut -> Proper Magento 2 Composer Setup](https://de
 - [Shipit-deploy (Node-js)](https://github.com/shipitjs/shipit-deploy)
 
 +++
-@title[Demo Right Deployment]
 
-[Demo]
-
-+++
 #### Pros 👍
 
 <br>
 
 - Fully automated |
 - Reliable |
-- Low Downtime: ~20sec |
+- Low Downtime: ~20sec (DB updates) |
 
 ---
 @title[Disclaimer 2.2]
@@ -185,6 +198,7 @@ Tutorial: [https://dev.to/jalogut -> Proper Magento 2 Composer Setup](https://de
 * <span style="opacity: 0.2;">Right deployment</span>
 * **Zero Downtime**
 * <span style="opacity: 0.2;">Build Pipeline</span>
+* <span style="opactity: 0.2;">M2 Deployer-Plus</span>
 * <span style="opacity: 0.2;">CI/CD</span>
 
 @fa[arrow-down]
@@ -202,23 +216,17 @@ Tutorial: [https://dev.to/jalogut -> Proper Magento 2 Composer Setup](https://de
 <br>
 
 - setup:db:status
-- config:import:status (<span style="color:#f46f25">>= 2.2.3</span>)
+- config:import:status (<span style="color:#f46f25">>= 2.2.5</span>)
 
 +++
 #### Workaround (config:import:status)
 
 <br>
 
-
 ```bash
 bin/magento config:set workaround/check/config_status 1
 # Check output == "please run app:config:import"
 ```
-
-+++
-@title[Demo zero downtime]
-
-[Demo]
 
 +++
 @title[Zero downtime accomplished]
@@ -273,7 +281,7 @@ Config propagation in files
 
 +++
 
-#### Up-Vote PR! 🙌
+#### Fix in >= 2.3 😩
 
 <br>
 
@@ -286,10 +294,6 @@ Config propagation in files
 <br>
 
 magento2-config-dump-skip-system.xml: [https://gist.github.com/jalogut/](https://gist.github.com/jalogut/d72e0af6e10c502bff90423e66bf07b9)
-
-+++
-
-[Demo]
 
 +++ 
 
@@ -311,6 +315,40 @@ magento2-config-dump-skip-system.xml: [https://gist.github.com/jalogut/](https:/
 * <span style="opacity: 0.2;">Right deployment</span>
 * <span style="opacity: 0.2;">Zero Downtime</span>
 * <span style="opacity: 0.2;">Build Pipeline</span>
+* **M2 Deployer-Plus**
+* <span style="opactity: 0.2;">CI/CD</span>
+
++++
+@title[Deployer-plus Tool]
+
+#### Out-of-the-box Deployments
+
+<br>
+
+- [jalogut/magento2-deployer-plus](https://github.com/jalogut/magento2-deployer-plus)
+- `composer require "jalogut/magento2-deployer-plus"`
+
++++
+@title[Deployer-plus Features]
+
+#### Features
+
+- M2 out of the box deployments
+- Compatible with 2.1 and 2.2 |
+- Zero Downtime (>= 2.2) |
+- Build and Deploy artifacts (>= 2.2) |
+- Secure rollbacks (>= 2.2) | 
+
+---
+@title[Agenda 7]
+## Agenda
+
+* <span style="opacity: 0.2;">Intro</span>
+* <span style="opacity: 0.2;">Wrong deployment</span>
+* <span style="opacity: 0.2;">Right deployment</span>
+* <span style="opacity: 0.2;">Zero Downtime</span>
+* <span style="opacity: 0.2;">Build Pipeline</span>
+* <span style="opactity: 0.2;">M2 Deployer-Plus</span>
 * **CI/CD**
 
 @fa[arrow-down]
@@ -331,41 +369,12 @@ tests &rarr; builds &rarr; deploys
 
 Setup Continuos Integration/Delivery system: [https://dev.to/jalogut](https://dev.to/jalogut/setup-continuos-integrationdelivery-system-in-just-4-steps-with-jenkins-pipelines-and-blue-ocean)
 
-+++
-#### Files
++++?gist=jalogut/a7d05c3326bc2dd2206ed269577d3b87&lang=groovy&title=Source: Jenkinsfile
 
-<br>
-
-- build.sh &rarr; Jenkins |
-- deploy.sh &rarr; Web Servers |
-- properties &rarr; git |
-
-
-+++
-#### Continuous Deployment
-
-Unique hash
-```bash
-# deploy.sh
-if [[ ${VERSION} = "develop" ]]; then
-    TARGET=${TARGET}-$(date +%s)
-fi
-RELEASE=${WORKING_DIR}/${TARGET}
-```
-
-+++
-@title[Jenkins project example]
-
-[https://github.com/jalogut/magento-2.2-demo](https://github.com/jalogut/magento-2.2-demo)
-![Jenking project example](assets/img/jenkins_project_example.png)
-
-+++?code=scripts/build-jenkins/Jenkinsfile&lang=groovy&title=Source: Jenkinsfile
-
-@[29,31-32](Build Bundle)
-@[33-36](Always deploy develop)
-@[39-40,42](Confirm deploy)
-@[43,44](Tag version)
-@[51-54,57-60](Deploy to Stage/Production)
+@[13-14,16-17](Branch to Server)
+@[22,25](Get code)
+@[31](Build)
+@[36](Deploy)
 
 +++
 @title[Demo CI/CD]
