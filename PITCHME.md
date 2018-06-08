@@ -370,22 +370,16 @@ Setup Continuos Integration/Delivery system: [https://dev.to/jalogut](https://de
 
 +++?gist=jalogut/a7d05c3326bc2dd2206ed269577d3b87&lang=groovy&title=Source: Jenkinsfile
 
-@[13-14,16-17](Branch to Server)
-@[22,25](Get code)
-@[31](Build)
-@[36](Deploy)
+@[9-11,13-14,16-17](Branch to Server)
+@[21-22,24-25](Get code)
+@[30-31](Build)
+@[34,36](Deploy)
 
 +++
 @title[Demo CI/CD]
 CI/CD
 
 ![YouTube Video](https://www.youtube.com/embed/SSVqzb3844k)
-
-+++
-@title[Demo Prod Deploy]
-STAGE/PROD Deploy
-
-![YouTube Video](https://www.youtube.com/embed/Pe_b1OoIqn0)
 
 ---
 
@@ -448,19 +442,6 @@ setup:static-content:deploy -f --strategy compact
 
 **Warning**: I didn't test it yet!
 
-+++
-
-#### DB Backup 
-
-```bash
-# deploy.sh
-if [[ 1 == ${UPGRADE_NEEDED} ]]; then
-  	bin/magento maintenance:enable
-  	n98-magerun2 db:dump --compression='gzip' ${WORKING_DIR}/backups/live-$(date +%s).sql.gz
-  	bin/magento setup:upgrade --keep-generated
-fi
-```
-
 ---
 @title[Issues]
 ## Issues 🤕
@@ -503,16 +484,6 @@ setup:static-content:deploy -f --exclude-theme=Magento/blank
 ```
 
 ---
-#### Out-of-the-box Tools
-
-<br>
-
-- [staempfli/magento2-builder-tool](https://github.com/staempfli/magento2-builder-tool)
-- [staempfli/magento2-deployment-tool](https://github.com/staempfli/magento2-deployment-tool)
-
-Usage Example: [jalogut/magento-22-mg2-builder](https://github.com/jalogut/magento-22-mg2-builder)
-
----
 @title[Take aways]
 ## Take Aways
 
@@ -526,35 +497,9 @@ Usage Example: [jalogut/magento-22-mg2-builder](https://github.com/jalogut/magen
 @title[Resources]
 ## Resources
 
-@fa[arrow-down]
-
-+++
-#### Magento 2: 
-
-<br>
-
-- Alan Kent - Magento 2.2 deployment:
-	- [Video](https://www.youtube.com/watch?v=nIFfn3YHkPs)
-	- [Slides](https://info2.magento.com/rs/585-GGD-959/images/The%20New%20Magento%202.2%20Deployment%20Capabilities%20%26%20Patterns.pdf)
-- MageDeploy2:
-	- [https://dev98.de &rarr; Introducing MageDeploy2](https://dev98.de/2017/03/01/introducing-magedeploy2/)
-
-+++
-#### Deployments in General
-
-<br>
-
-[https://serversforhackers.com/](https://serversforhackers.com/) &rarr; [DeployPHP](https://deploy.serversforhackers.com/)
-
-+++
-#### This Presentation
-
-- Slides: <span style="font-size:0.6em;">[https://gitpitch.com/jalogut/magento2-deploy-zero-downtime](https://gitpitch.com/jalogut/magento2-deploy-zero-downtime)</span>
-
-- Scripts: <span style="font-size:0.6em;">[https://github.com/jalogut/magento2-deploy-zero-downtime/tree/master/scripts](https://github.com/jalogut/magento2-deploy-zero-downtime/tree/master/scripts)</span>
+- Slides: <span style="font-size:0.6em;">[https://gitpitch.com/jalogut/magento2-zero-downtime-deployments-for-everyone/master](https://gitpitch.com/jalogut/magento2-zero-downtime-deployments-for-everyone/master)</span>
 
 - Project Example: <span style="font-size:0.6em;">[https://github.com/jalogut/magento-2.2-demo](https://github.com/jalogut/magento-2.2-demo)</span>
-
 
 ---?image=assets/img/about-me.png
 @title[About me]
