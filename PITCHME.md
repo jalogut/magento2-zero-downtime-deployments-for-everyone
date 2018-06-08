@@ -337,7 +337,6 @@ magento2-config-dump-skip-system.xml: [https://gist.github.com/jalogut/](https:/
 - Compatible with 2.1 and 2.2 |
 - Zero Downtime (>= 2.2) |
 - Build and Deploy artifacts (>= 2.2) |
-- Secure rollbacks (>= 2.2) | 
 
 ---
 @title[Agenda 7]
