@@ -27,7 +27,7 @@
 
 +++
 @title[Scared]
-#### Scary moment
+#### Scared
 ![Comic scared](assets/img/rage_comic/scared.jpg)
 
 +++
