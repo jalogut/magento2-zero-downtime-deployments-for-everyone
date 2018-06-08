@@ -1,27 +1,15 @@
 @title[Introduction]
-## Fully automated 
-## Zero downtime
-##### <span style="font-family:Helvetica Neue; font-weight:bold">deployments in <span style="color:#f46f25">Magento 2.2</span></span>
 
----?image=assets/img/about-me.png
-@title[About me]
+##### <span style="font-family:Helvetica Neue; font-weight:bold; color:#f46f25">Magento 2</span>
 
----
-@title[Agenda 0]
-## Agenda
-
-* Project Setup
-* Wrong deployment
-* Right deployment
-* Zero Downtime
-* Build Pipeline
-* CI/CD
+## Zero Downtime 
+## Deployments for Everyone
 
 ---
 @title[Agenda 1]
 ## Agenda
 
-* **Project Setup**
+* **Intro**
 * <span style="opacity: 0.2;">Wrong deployment</span>
 * <span style="opacity: 0.2;">Right deployment</span>
 * <span style="opacity: 0.2;">Zero Downtime</span>
@@ -31,38 +19,46 @@
 @fa[arrow-down]
 
 +++
-@title[Project Setup]
-
-<ul>
-<li>git (or another VCS)</li>
-<li class="fragment">composer</li>
-<li class="fragment">composer.lock in VCS</li>
-<li class="fragment">etc/config.php in VCS</li>
-<li class="fragment">~~etc/env.php~~  **NOT** in VCS</li>
-<li class="fragment">~~vendor~~ **NOT** in VCS</li>
-</ul>
+@title[Scared]
+#### Scary moment
+![Comic scared](assets/img/rage_comic/scared.jpg)
 
 +++
-@title[Composer Setup Tutorial]
-#### Tutorial
+@title[M1 Commands]
+#### M1 Commands
 
 <br>
 
-Proper Magento 2 Composer Setup: [https://blog.hauri.me/](https://blog.hauri.me/proper-magento2-composer-setup.html)
+- git pull
+- [composer install]
+- setup:upgrade
+- cache:clean
 
 +++
-@title[Magento 2 Project Example]
-#### Example
+@title[Happy]
+#### Happy
+![Comic happy](assets/img/rage_comic/happy.jpg)
 
-<br>
++++?image=assets/img/keep-calm-deploys.png
+@title[M2 Commands]
 
-[https://github.com/jalogut/magento-2.2-demo](https://github.com/jalogut/magento-2.2-demo)
++++
+@title[It begins]
+![Comic it begins](assets/img/rage_comic/it-begins.jpg)
+
++++
+@title[Something wrong]
+![Comic crazy](assets/img/rage_comic/crazy.jpg)
+
++++
+@title[Kill Magento]
+![Comic kill](assets/img/rage_comic/kill-magento.jpg)
 
 ---
 @title[Agenda 2]
 ## Agenda
 
-* <span style="opacity: 0.2;">Project Setup</span>
+* <span style="opacity: 0.2;">Intro</span>
 * **Wrong deployment**
 * <span style="opacity: 0.2;">Right deployment</span>
 * <span style="opacity: 0.2;">Zero Downtime</span>
@@ -72,14 +68,7 @@ Proper Magento 2 Composer Setup: [https://blog.hauri.me/](https://blog.hauri.me/
 @fa[arrow-down]
 
 +++
-#### Manually
-
-<br>
-
-[Demo]
-
-+++
-#### Cons 👎
+#### Manually 👎
 
 <br>
 
@@ -88,14 +77,7 @@ Proper Magento 2 Composer Setup: [https://blog.hauri.me/](https://blog.hauri.me/
 - High Downtime: 15min - 30min |
 
 +++
-#### Simple Automation
-
-<br>
-
-[Demo]
-
-+++
-#### Cons 👎
+#### Simple Automation not enough 👎
 
 <br>
 
@@ -106,7 +88,7 @@ Proper Magento 2 Composer Setup: [https://blog.hauri.me/](https://blog.hauri.me/
 @title[Agenda 3]
 ## Agenda
 
-* <span style="opacity: 0.2;">Project Setup</span>
+* <span style="opacity: 0.2;">Intro</span>
 * <span style="opacity: 0.2;">Wrong deployment</span>
 * **Right deployment**
 * <span style="opacity: 0.2;">Zero Downtime</span>
@@ -114,6 +96,19 @@ Proper Magento 2 Composer Setup: [https://blog.hauri.me/](https://blog.hauri.me/
 * <span style="opacity: 0.2;">CI/CD</span>
 
 @fa[arrow-down]
+
++++
+@title[Project Setup]
+#### Project Setup
+
+<ul>
+<li class="fragment">composer.lock in VCS</li>
+<li class="fragment">etc/config.php in VCS</li>
+<li class="fragment">~~etc/env.php~~ **NOT** in VCS</li>
+<li class="fragment">~~vendor~~ **NOT** in VCS</li>
+</ul>
+
+Tutorial: [https://dev.to/jalogut -> Proper Magento 2 Composer Setup](https://dev.to/jalogut/proper-magento-2-composer-setup-40dm)
 
 +++
 @title[Current live]
@@ -183,7 +178,7 @@ Proper Magento 2 Composer Setup: [https://blog.hauri.me/](https://blog.hauri.me/
 @title[Agenda 4]
 ## Agenda
 
-* <span style="opacity: 0.2;">Project Setup</span>
+* <span style="opacity: 0.2;">Intro</span>
 * <span style="opacity: 0.2;">Wrong deployment</span>
 * <span style="opacity: 0.2;">Right deployment</span>
 * **Zero Downtime**
@@ -233,7 +228,7 @@ bin/magento config:set workaround/check/config_status 1
 @title[Agenda 5]
 ## Agenda
 
-* <span style="opacity: 0.2;">Project Setup</span>
+* <span style="opacity: 0.2;">Intro</span>
 * <span style="opacity: 0.2;">Wrong deployment</span>
 * <span style="opacity: 0.2;">Right deployment</span>
 * <span style="opacity: 0.2;">Zero Downtime</span>
@@ -309,7 +304,7 @@ magento2-config-dump-skip-system.xml: [https://gist.github.com/jalogut/](https:/
 @title[Agenda 6]
 ## Agenda
 
-* <span style="opacity: 0.2;">Project Setup</span>
+* <span style="opacity: 0.2;">Intro</span>
 * <span style="opacity: 0.2;">Wrong deployment</span>
 * <span style="opacity: 0.2;">Right deployment</span>
 * <span style="opacity: 0.2;">Zero Downtime</span>
@@ -550,6 +545,9 @@ Usage Example: [jalogut/magento-22-mg2-builder](https://github.com/jalogut/magen
 
 - Project Example: <span style="font-size:0.6em;">[https://github.com/jalogut/magento-2.2-demo](https://github.com/jalogut/magento-2.2-demo)</span>
 
+
+---?image=assets/img/about-me.png
+@title[About me]
 
 ---
 @title[thank you]
