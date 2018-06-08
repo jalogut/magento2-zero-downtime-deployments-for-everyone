@@ -9,7 +9,7 @@
 
 <br>
 
-### Desployments == Breaking Live Server 💥
+### Deployment == Break Server 💥
 
 ---
 @title[Agenda 1]
@@ -20,7 +20,7 @@
 * <span style="opacity: 0.2;">Right deployment</span>
 * <span style="opacity: 0.2;">Zero Downtime</span>
 * <span style="opacity: 0.2;">Build Pipeline</span>
-* <span style="opactity: 0.2;">M2 Deployer-Plus</span>
+* <span style="opacity: 0.2;">M2 Deployer-Plus</span>
 * <span style="opacity: 0.2;">CI/CD</span>
 
 @fa[arrow-down]
@@ -79,7 +79,7 @@
 * <span style="opacity: 0.2;">Right deployment</span>
 * <span style="opacity: 0.2;">Zero Downtime</span>
 * <span style="opacity: 0.2;">Build Pipeline</span>
-* <span style="opactity: 0.2;">M2 Deployer-Plus</span>
+* <span style="opacity: 0.2;">M2 Deployer-Plus</span>
 * <span style="opacity: 0.2;">CI/CD</span>
 
 @fa[arrow-down]
@@ -110,7 +110,7 @@
 * **Right deployment**
 * <span style="opacity: 0.2;">Zero Downtime</span>
 * <span style="opacity: 0.2;">Build Pipeline</span>
-* <span style="opactity: 0.2;">M2 Deployer-Plus</span>
+* <span style="opacity: 0.2;">M2 Deployer-Plus</span>
 * <span style="opacity: 0.2;">CI/CD</span>
 
 @fa[arrow-down]
@@ -198,7 +198,7 @@
 * <span style="opacity: 0.2;">Right deployment</span>
 * **Zero Downtime**
 * <span style="opacity: 0.2;">Build Pipeline</span>
-* <span style="opactity: 0.2;">M2 Deployer-Plus</span>
+* <span style="opacity: 0.2;">M2 Deployer-Plus</span>
 * <span style="opacity: 0.2;">CI/CD</span>
 
 @fa[arrow-down]
@@ -316,7 +316,7 @@ magento2-config-dump-skip-system.xml: [https://gist.github.com/jalogut/](https:/
 * <span style="opacity: 0.2;">Zero Downtime</span>
 * <span style="opacity: 0.2;">Build Pipeline</span>
 * **M2 Deployer-Plus**
-* <span style="opactity: 0.2;">CI/CD</span>
+* <span style="opacity: 0.2;">CI/CD</span>
 
 +++
 @title[Deployer-plus Tool]
@@ -347,7 +347,7 @@ magento2-config-dump-skip-system.xml: [https://gist.github.com/jalogut/](https:/
 * <span style="opacity: 0.2;">Right deployment</span>
 * <span style="opacity: 0.2;">Zero Downtime</span>
 * <span style="opacity: 0.2;">Build Pipeline</span>
-* <span style="opactity: 0.2;">M2 Deployer-Plus</span>
+* <span style="opacity: 0.2;">M2 Deployer-Plus</span>
 * **CI/CD**
 
 @fa[arrow-down]
