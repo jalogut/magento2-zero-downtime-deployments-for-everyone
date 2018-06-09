@@ -349,13 +349,15 @@ composer require "jalogut/magento2-deployer-plus"
 
 <br>
 
-git deploys
+Standard deploys
 
 ```bash
 bin/dep deploy [<stage>]
 ```
 
-Build pipeline deploys (>= 2.2)
+<br>
+
+Build pipeline (>= 2.2)
 
 ```bash
 bin/dep build
@@ -366,6 +368,8 @@ bin/dep deploy-artifact [<stage>]
 @title[Deployer-plus Features]
 
 #### Features
+
+<br>
 
 - Compatible with 2.1 and 2.2 |
 - Zero Downtime (>= 2.2) |
@@ -422,6 +426,8 @@ CI/CD
 
 +++
 #### No Interaction >=2.2
+
+<br>
 
 ```bash
 bin/magento setup:upgrade --keep-generated --no-interaction
@@ -493,6 +499,8 @@ cron:install --force
 
 #### WYSIWYG & Media Symlink >=2.2.3
 
+<br>
+
 - Issue: [#13929](https://github.com/magento/magento2/issues/13929)
 - Workaround: [cweagans/composer-patches](https://github.com/magento/magento2/issues/13929#issuecomment-374865576)
 
@@ -500,9 +508,9 @@ cron:install --force
 
 #### Local Config
 
-- Issue: [PR #12361](https://github.com/magento/magento2/pull/12361)
-
 <br>
+
+- Issue: [PR #12361](https://github.com/magento/magento2/pull/12361)
 
 Workaround
 
@@ -518,9 +526,9 @@ bin/magento config:set --lock-env dev/css/minify_files 0
 +++
 #### Js translations
 
-- Issue: [#7862](https://github.com/magento/magento2/issues/7862)
-
 <br>
+
+- Issue: [#7862](https://github.com/magento/magento2/issues/7862)
 
 Workaround
 
@@ -560,11 +568,11 @@ bin/magento setup:static-content:deploy fr_FR
 @title[Resources]
 ## Resources
 
+<br>
+
 - Slides: [jalogut/magento2-zero-downtime-deployments-for-everyone](https://gitpitch.com/jalogut/magento2-zero-downtime-deployments-for-everyone/master)
 - M2 Deployer Plus: [jalogut/magento2-deployer-plus](https://github.com/jalogut/magento2-deployer-plus)
-
 - Project Example: [jalogut/magento2-project-template-22](https://github.com/jalogut/magento2-project-template-22)
-
 - Setup Tutorial: [https://dev.to/jalogut](https://dev.to/jalogut/proper-magento-2-composer-setup-40dm) &rarr; Proper Magento 2 Composer Setup
 
 ---?image=assets/img/about-me.png
