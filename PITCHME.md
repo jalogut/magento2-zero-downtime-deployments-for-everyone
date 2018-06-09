@@ -572,8 +572,6 @@ bin/magento setup:static-content:deploy fr_FR
 
 - Project Example: <span style="font-size:0.7em;">[jalogut/magento2-project-template-22](https://github.com/jalogut/magento2-project-template-22)</span>
 
-- Setup Tutorial: <span style="font-size:0.7em;">[https://dev.to/jalogut](https://dev.to/jalogut/proper-magento-2-composer-setup-40dm) &rarr; Proper Magento 2 Composer Setup</span>
-
 ---?image=assets/img/about-me.png
 @title[About me]
 
