@@ -17,7 +17,7 @@
 * <span style="opacity: 0.2;">Right deployment</span>
 * <span style="opacity: 0.2;">Zero Downtime (>=2.2)</span>
 * <span style="opacity: 0.2;">Build Pipeline (>=2.2)</span>
-* <span style="opacity: 0.2;">M2 Deployer-Plus</span>
+* <span style="opacity: 0.2;">M2 Deployer Plus</span>
 * <span style="opacity: 0.2;">CI/CD</span>
 
 @fa[arrow-down]
@@ -82,7 +82,7 @@
 * **Right deployment**
 * <span style="opacity: 0.2;">Zero Downtime (>=2.2)</span>
 * <span style="opacity: 0.2;">Build Pipeline (>=2.2)</span>
-* <span style="opacity: 0.2;">M2 Deployer-Plus</span>
+* <span style="opacity: 0.2;">M2 Deployer Plus</span>
 * <span style="opacity: 0.2;">CI/CD</span>
 
 @fa[arrow-down]
@@ -141,7 +141,7 @@
 
 +++
 @title[Key Commands]
-#### Key Commands 👍
+#### Key Commands
 
 ```bash
 # 1. Files Generation
@@ -174,7 +174,7 @@ bin/magento setup:upgrade --keep-generated
 * <span style="opacity: 0.2;">Right deployment</span>
 * **Zero Downtime (>=2.2)**
 * <span style="opacity: 0.2;">Build Pipeline (>=2.2)</span>
-* <span style="opacity: 0.2;">M2 Deployer-Plus</span>
+* <span style="opacity: 0.2;">M2 Deployer Plus</span>
 * <span style="opacity: 0.2;">CI/CD</span>
 
 @fa[arrow-down]
@@ -195,7 +195,8 @@ bin/magento setup:upgrade --keep-generated
 - config:import:status (<span style="color:#f46f25">>= 2.2.5</span>)
 
 +++
-#### Workaround (config:import:status)
+#### Workaround
+config:import:status
 
 <br>
 
@@ -214,8 +215,8 @@ bin/magento config:set workaround/check/config_status 1
 @title[Disclaimer setup_version]
 #### Disclaimer
 
-- `setup:db:status` checks setup_version in module.xml
-- **Do not change it** unless you add setup scripts
+- setup:db:status checks version in module.xml
+- **Do not change it** unless you add new scripts
 
 ```xml
 <module name="Vendor_Module" setup_version="1.2.0">
@@ -229,6 +230,7 @@ bin/magento config:set workaround/check/config_status 1
 * <span style="opacity: 0.2;">Right deployment</span>
 * <span style="opacity: 0.2;">Zero Downtime (>=2.2)</span>
 * **Build Pipeline (>=2.2)**
+* <span style="opacity: 0.2;">M2 Deployer Plus</span>
 * <span style="opacity: 0.2;">CI/CD</span>
 
 @fa[arrow-down]
@@ -275,7 +277,7 @@ Config propagation in files
 
 +++
 
-#### Workaround: 
+#### Workaround 
 
 <br>
 
@@ -287,7 +289,10 @@ magento2-config-dump-skip-system.xml: [https://gist.github.com/jalogut/](https:/
 <br>
 
 ```bash
+# Dump scopes and themes (>=2.2.5 -> app:config:dump scopes themes)
 bin/magento app:config:dump
+
+# Dump system settings for static content
 bin/magento config:set --lock-config dev/js/merge_files 1
 bin/magento config:set --lock-config dev/js/enable_js_bundling 0
 bin/magento config:set --lock-config dev/js/minify_files 1
@@ -298,11 +303,12 @@ bin/magento config:set --lock-config dev/static/sign 1
 
 +++ 
 @title[config.php example]
-#### Example etc/config.php
+#### Example
+config.php 
 
 <br>
 
-- [jalogut/magento2-project-template-22 -> symlinks/magento/app/etc/config.php](https://github.com/jalogut/magento2-project-template-22/blob/master/symlinks/magento/app/etc/config.php)
+- [jalogut/magento2-project-template-22](https://github.com/jalogut/magento2-project-template-22/blob/master/symlinks/magento/app/etc/config.php) &rarr; symlinks/magento/app/etc/config.php
 
 +++
 
@@ -322,8 +328,10 @@ bin/magento config:set --lock-config dev/static/sign 1
 * <span style="opacity: 0.2;">Right deployment</span>
 * <span style="opacity: 0.2;">Zero Downtime (>=2.2)</span>
 * <span style="opacity: 0.2;">Build Pipeline (>=2.2)</span>
-* **M2 Deployer-Plus**
+* **M2 Deployer Plus**
 * <span style="opacity: 0.2;">CI/CD</span>
+
+@fa[arrow-down]
 
 +++
 @title[Deployer-plus Tool]
@@ -353,7 +361,7 @@ composer require "jalogut/magento2-deployer-plus"
 * <span style="opacity: 0.2;">Right deployment</span>
 * <span style="opacity: 0.2;">Zero Downtime (>=2.2)</span>
 * <span style="opacity: 0.2;">Build Pipeline (>=2.2)</span>
-* <span style="opacity: 0.2;">M2 Deployer-Plus</span>
+* <span style="opacity: 0.2;">M2 Deployer Plus</span>
 * **CI/CD**
 
 @fa[arrow-down]
@@ -410,7 +418,7 @@ bin/magento app:config:import --no-interaction
 OPcache, Varnish, ...
 
 ```bash
-# Add varnish pruge in env.php
+# Add varnish purge in env.php
 magento setup:config:set --http-cache hosts=<hostname or ip>:<listen port>
 ```
 
@@ -460,23 +468,25 @@ cron:install --force
 
 <br>
 
-- Avoid dumping everything: [PR #12410](https://github.com/magento/magento2/pull/12410)
-- [https://gist.github.com/jalogut/](https://gist.github.com/jalogut/d72e0af6e10c502bff90423e66bf07b9) &rarr; magento2-config-dump-skip-system.xml
+- Issue: [PR #12410](https://github.com/magento/magento2/pull/12410)
+- Workaround: [https://gist.github.com/jalogut/](https://gist.github.com/jalogut/d72e0af6e10c502bff90423e66bf07b9) &rarr; magento2-config-dump-skip-system.xml
 
 +++
 
 #### WYSIWYG & Media Symlink >=2.2.3
 
-- [Issue #13929](https://github.com/magento/magento2/issues/13929)
-- [Patch with cweagans/composer-patches](https://github.com/magento/magento2/issues/13929#issuecomment-374865576)
+- Issue: [#13929](https://github.com/magento/magento2/issues/13929)
+- Workaround: [cweagans/composer-patches](https://github.com/magento/magento2/issues/13929#issuecomment-374865576)
 
 +++
 
 #### Local Config
 
-[PR #12361](https://github.com/magento/magento2/pull/12361)
+- Issue: [PR #12361](https://github.com/magento/magento2/pull/12361)
+- Woraround:
 
 ```bash
+# Manually set local config settings in env.php
 bin/magento config:set --lock-env dev/js/merge_files 0
 bin/magento config:set --lock-env dev/js/enable_js_bundling 0
 bin/magento config:set --lock-env dev/js/minify_files 0
@@ -487,10 +497,15 @@ bin/magento config:set --lock-env dev/css/minify_files 0
 +++
 #### Js translations
 
-<br>
+- Issue: [#7862](https://github.com/magento/magento2/issues/7862)
+- Workaorund:
 
-- Still not fixed: [#10673](http://devdocs.magento.com/guides/v2.2/config-guide/prod/config-reference-var-name.html)
-- `setup:static-content:deploy` once per language
+```bash
+# setup:static-content:deploy once per language
+bin/magento setup:static-content:deploy en_US
+bin/magento setup:static-content:deploy de_CH
+bin/magento setup:static-content:deploy fr_FR
+```
 
 ---
 @title[Take aways]
@@ -504,30 +519,29 @@ bin/magento config:set --lock-env dev/css/minify_files 0
 
 +++
 @title[Crazy]
-#### Angry
+#### Before
 ![Comic angry](assets/img/rage_comic/angry.jpg)
 
 +++
 @title[Everything automated]
-#### Deploy automated
+#### Now
 ![Comic happy](assets/img/rage_comic/happy.jpg)
 
 +++
 @title[Kill Magento]
-#### Sometimes still want to kill Magento
+#### Always
 ![Comic kill](assets/img/rage_comic/kill-magento.jpg)
 
 ---
 @title[Resources]
 ## Resources
 
-- Slides: <span style="font-size:0.6em;">[https://gitpitch.com/jalogut/magento2-zero-downtime-deployments-for-everyone/master](https://gitpitch.com/jalogut/magento2-zero-downtime-deployments-for-everyone/master)</span>
+- Slides: [jalogut/magento2-zero-downtime-deployments-for-everyone](https://gitpitch.com/jalogut/magento2-zero-downtime-deployments-for-everyone/master)
+- M2 Deployer Plus: [jalogut/magento2-deployer-plus](https://github.com/jalogut/magento2-deployer-plus)
 
-- magento2-deployer-plus: <span style="font-size:0.6em;">[https://github.com/jalogut/magento2-deployer-plus](https://github.com/jalogut/magento2-deployer-plus)</span>
+- Project Example: [jalogut/magento2-project-template-22](https://github.com/jalogut/magento2-project-template-22)
 
-- Project Example: <span style="font-size:0.6em;">[https://github.com/jalogut/magento2-project-template-22](https://github.com/jalogut/magento2-project-template-22)</span>
-
-- Proper Magento 2 Composer Setup: <span style="font-size:0.6em;">[https://dev.to/jalogut](https://dev.to/jalogut/proper-magento-2-composer-setup-40dm)
+- Setup Tutorial: [https://dev.to/jalogut](https://dev.to/jalogut/proper-magento-2-composer-setup-40dm) &rarr; Proper Magento 2 Composer Setup
 
 ---?image=assets/img/about-me.png
 @title[About me]
@@ -545,4 +559,3 @@ Feedback & Questions
 
 [@jalogut](https://twitter.com/jalogut)
 
- 
