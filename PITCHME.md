@@ -215,6 +215,8 @@ bin/magento config:set workaround/check/config_status 1
 @title[Disclaimer setup_version]
 #### Disclaimer
 
+<br>
+
 - setup:db:status checks version in module.xml
 - **Do not change it** unless you add new scripts
 
@@ -304,7 +306,7 @@ config.php
 
 <br>
 
-- [jalogut/magento2-project-template-22](https://github.com/jalogut/magento2-project-template-22/blob/master/symlinks/magento/app/etc/config.php) &rarr; symlinks/magento/app/etc/config.php
+[jalogut/magento2-project-template-22](https://github.com/jalogut/magento2-project-template-22/blob/master/symlinks/magento/app/etc/config.php) &rarr; symlinks/magento/app/etc/config.php
 
 +++
 
@@ -525,7 +527,7 @@ bin/magento setup:static-content:deploy fr_FR
 
 +++
 @title[Kill Magento]
-#### Always
+#### Still Always
 ![Comic kill](assets/img/rage_comic/kill-magento.jpg)
 
 ---
