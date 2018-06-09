@@ -566,15 +566,13 @@ bin/magento setup:static-content:deploy fr_FR
 @title[Resources]
 ## Resources
 
-<br>
+- Slides: <span style="font-size:0.7em;">[jalogut/magento2-zero-downtime-deployments-for-everyone](https://gitpitch.com/jalogut/magento2-zero-downtime-deployments-for-everyone/master)</span>
 
-- Slides: <span style="font-size:0.6em;">[jalogut/magento2-zero-downtime-deployments-for-everyone](https://gitpitch.com/jalogut/magento2-zero-downtime-deployments-for-everyone/master)</span>
+- M2 Deployer Plus: <span style="font-size:0.7em;">[jalogut/magento2-deployer-plus](https://github.com/jalogut/magento2-deployer-plus)</span>
 
-- M2 Deployer Plus: <span style="font-size:0.6em;">[jalogut/magento2-deployer-plus](https://github.com/jalogut/magento2-deployer-plus)</span>
+- Project Example: <span style="font-size:0.7em;">[jalogut/magento2-project-template-22](https://github.com/jalogut/magento2-project-template-22)</span>
 
-- Project Example: <span style="font-size:0.6em;">[jalogut/magento2-project-template-22](https://github.com/jalogut/magento2-project-template-22)</span>
-
-- Setup Tutorial: <span style="font-size:0.6em;">[https://dev.to/jalogut](https://dev.to/jalogut/proper-magento-2-composer-setup-40dm) &rarr; Proper Magento 2 Composer Setup</span>
+- Setup Tutorial: <span style="font-size:0.7em;">[https://dev.to/jalogut](https://dev.to/jalogut/proper-magento-2-composer-setup-40dm) &rarr; Proper Magento 2 Composer Setup</span>
 
 ---?image=assets/img/about-me.png
 @title[About me]
