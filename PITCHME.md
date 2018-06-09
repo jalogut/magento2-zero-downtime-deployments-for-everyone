@@ -566,6 +566,8 @@ bin/magento setup:static-content:deploy fr_FR
 @title[Resources]
 ## Resources
 
+<br>
+
 - Slides: <span style="font-size:0.7em;">[jalogut/magento2-zero-downtime-deployments-for-everyone](https://gitpitch.com/jalogut/magento2-zero-downtime-deployments-for-everyone/master)</span>
 
 - M2 Deployer Plus: <span style="font-size:0.7em;">[jalogut/magento2-deployer-plus](https://github.com/jalogut/magento2-deployer-plus)</span>
