@@ -501,7 +501,10 @@ cron:install --force
 #### Local Config
 
 - Issue: [PR #12361](https://github.com/magento/magento2/pull/12361)
-- Woraround:
+
+<br>
+
+Workaround
 
 ```bash
 # Manually set local config settings in env.php
@@ -516,7 +519,10 @@ bin/magento config:set --lock-env dev/css/minify_files 0
 #### Js translations
 
 - Issue: [#7862](https://github.com/magento/magento2/issues/7862)
-- Workaorund:
+
+<br>
+
+Workaround
 
 ```bash
 # setup:static-content:deploy once per language
