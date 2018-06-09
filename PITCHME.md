@@ -235,10 +235,8 @@ bin/magento config:set workaround/check/config_status 1
 
 @fa[arrow-down]
 
-+++
++++?image=assets/img/build_pipeline_full.png
 @title[Build Pipeline]
-
-![Build Pipeline](assets/img/build_pipeline.png)
 
 +++
 
@@ -256,10 +254,8 @@ Config in Build === Config in Servers
 
 Config propagation in files
 
-+++
-@title[config.php]
-
-![config.php](assets/img/config_dump_system.png)
++++?image=assets/img/config_dump_system_full.png
+@title[Docs config.php]
 
 +++
 
