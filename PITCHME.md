@@ -343,6 +343,26 @@ composer require "jalogut/magento2-deployer-plus"
 ```
 
 +++
+@title[Deployer-plus commands]
+
+#### Deployment Commands
+
+<br>
+
+git deploys
+
+```bash
+bin/dep deploy [<stage>]
+```
+
+Build pipeline deploys (>= 2.2)
+
+```bash
+bin/dep build
+bin/dep deploy-artifact [<stage>]
+```
+
++++
 @title[Deployer-plus Features]
 
 #### Features
