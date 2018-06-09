@@ -3,11 +3,9 @@
 ## Zero Downtime 
 ## Deployments for Everyone
 
-<span style="font-family:Helvetica Neue; font-weight:bold;">By Juan Alonso - <span style="color:#f46f25;"> @Jalogut</span>
+<span style="font-family:Helvetica Neue; font-weight:bold;color:#f46f25;">Juan Alonso - @Jalogut</span>
 
 ---
-
-<br>
 
 ### Deployment == Break Server 💥
 
