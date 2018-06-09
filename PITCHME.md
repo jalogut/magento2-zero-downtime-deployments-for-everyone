@@ -355,8 +355,6 @@ Standard deploys
 bin/dep deploy [<stage>]
 ```
 
-<br>
-
 Build pipeline (>= 2.2)
 
 ```bash
@@ -570,10 +568,13 @@ bin/magento setup:static-content:deploy fr_FR
 
 <br>
 
-- Slides: [jalogut/magento2-zero-downtime-deployments-for-everyone](https://gitpitch.com/jalogut/magento2-zero-downtime-deployments-for-everyone/master)
-- M2 Deployer Plus: [jalogut/magento2-deployer-plus](https://github.com/jalogut/magento2-deployer-plus)
-- Project Example: [jalogut/magento2-project-template-22](https://github.com/jalogut/magento2-project-template-22)
-- Setup Tutorial: [https://dev.to/jalogut](https://dev.to/jalogut/proper-magento-2-composer-setup-40dm) &rarr; Proper Magento 2 Composer Setup
+- Slides: <span style="font-size:0.6em;">[jalogut/magento2-zero-downtime-deployments-for-everyone](https://gitpitch.com/jalogut/magento2-zero-downtime-deployments-for-everyone/master)</span>
+
+- M2 Deployer Plus: <span style="font-size:0.6em;">[jalogut/magento2-deployer-plus](https://github.com/jalogut/magento2-deployer-plus)</span>
+
+- Project Example: <span style="font-size:0.6em;">[jalogut/magento2-project-template-22](https://github.com/jalogut/magento2-project-template-22)</span>
+
+- Setup Tutorial: <span style="font-size:0.6em;">[https://dev.to/jalogut](https://dev.to/jalogut/proper-magento-2-composer-setup-40dm) &rarr; Proper Magento 2 Composer Setup</span>
 
 ---?image=assets/img/about-me.png
 @title[About me]
