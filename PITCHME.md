@@ -516,14 +516,6 @@ cron:install --force
 @fa[arrow-down]
 
 +++
-#### app:config:dump <=2.2.5
-
-<br>
-
-- Issue: [PR #12410](https://github.com/magento/magento2/pull/12410)
-- Workaround: [https://gist.github.com/jalogut/](https://gist.github.com/jalogut/d72e0af6e10c502bff90423e66bf07b9) &rarr; magento2-config-dump-skip-system.xml
-
-+++
 
 #### WYSIWYG & Media Symlink >=2.2.3
 
