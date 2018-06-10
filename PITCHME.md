@@ -47,10 +47,6 @@
 @title[M2 Commands]
 
 +++
-@title[It begins]
-![Comic it begins](assets/img/rage_comic/it-begins.jpg)
-
-+++
 @title[Something wrong]
 #### Crazy
 ![Comic angry](assets/img/rage_comic/angry.jpg)
