@@ -91,6 +91,8 @@
 @title[Preconditions]
 #### Preconditions
 
+<br>
+
 <ul>
 <li class="fragment">composer.lock in VCS</li>
 <li class="fragment">etc/config.php in VCS</li>
@@ -267,7 +269,7 @@ Config propagation in files
 
 +++
 
-#### Fixed >= 2.2.5
+#### Fixed >=2.2.5
 
 <br>
 
@@ -429,6 +431,15 @@ tests &rarr; builds &rarr; deploys
 <br>
 
 Setup Continuos Integration/Delivery system: [https://dev.to/jalogut](https://dev.to/jalogut/setup-continuos-integrationdelivery-system-in-just-4-steps-with-jenkins-pipelines-and-blue-ocean)
+
++++
+@title[config.php example]
+#### Example
+Jenkinsfile
+
+<br>
+
+[jalogut/magento2-project-template-22](https://github.com/jalogut/magento2-project-template-22/blob/master/Jenkinsfile) &rarr; Jenkinsfile
 
 +++?gist=jalogut/a7d05c3326bc2dd2206ed269577d3b87&lang=groovy&title=Source: Jenkinsfile
 
