@@ -309,6 +309,27 @@ config.php
 [jalogut/magento2-project-template-22](https://github.com/jalogut/magento2-project-template-22/blob/master/symlinks/magento/app/etc/config.php) &rarr; symlinks/magento/app/etc/config.php
 
 +++
+@title[Build and deploy commands]
+#### Build & Deploy commands
+
+Build system
+```bash
+# Generate files
+bin/magento setup:di:compile
+bin/magento setup:static-content:deploy -f [languages1] ... [languagesN]
+# Create artifact
+tar --exclude-from=../artifact.excludes -czf ${ARTIFACT_FILENAME} .
+# Transfer artifact
+scp -P 22 ${ARTIFACT_FILENAME} ${SERVER_USERNAME}@${SERVER_HOST}:${DOWNLOADS_DIR}
+```
+
+Server
+```bash
+# Extract artifact
+tar -xzf ${DOWNLOADS_DIR}/${VERSION}.tar.gz -C ${RELEASE}
+# DB Upgrades if needed
+bin/magento setup:upgrade --keep-generated
+```
 
 #### Why?
 
@@ -559,7 +580,7 @@ bin/magento setup:static-content:deploy fr_FR
 
 +++
 @title[Kill Magento]
-#### Still Always
+#### Still Sometimes
 ![Comic kill](assets/img/rage_comic/kill-magento.jpg)
 
 ---
