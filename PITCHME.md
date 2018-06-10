@@ -337,6 +337,8 @@ tar -xzf ${DOWNLOADS_DIR}/${VERSION}.tar.gz -C ${RELEASE}
 bin/magento setup:upgrade --keep-generated
 ```
 
++++
+
 #### Why?
 
 <br>
