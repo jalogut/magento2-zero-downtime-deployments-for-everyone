@@ -282,6 +282,12 @@ Config propagation in files
 magento2-config-dump-skip-system.xml: [https://gist.github.com/jalogut/](https://gist.github.com/jalogut/d72e0af6e10c502bff90423e66bf07b9)
 
 +++
+@title[Config dump video demo]
+Config dump
+
+![YouTube Video](https://www.youtube.com/embed/_eRKWm5u4DE)
+
++++
 #### Setup config.php
 
 <br>
