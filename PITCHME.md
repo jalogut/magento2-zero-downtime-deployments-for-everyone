@@ -316,7 +316,6 @@ config.php
 
 +++
 @title[Build and deploy commands]
-#### Build & Deploy commands
 
 Build system
 ```bash
