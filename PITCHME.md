@@ -23,11 +23,6 @@
 @fa[arrow-down]
 
 +++
-@title[Scared]
-#### Scared
-![Comic scared](assets/img/rage_comic/scared.jpg)
-
-+++
 @title[M1 Commands]
 #### M1 Commands
 
@@ -40,7 +35,7 @@
 
 +++
 @title[Happy]
-#### Happy
+#### Easy
 ![Comic happy](assets/img/rage_comic/happy.jpg)
 
 +++
@@ -57,7 +52,7 @@
 
 +++
 @title[Something wrong]
-#### Angry
+#### Crazy
 ![Comic angry](assets/img/rage_comic/angry.jpg)
 
 +++
