@@ -30,8 +30,7 @@
 
 - git pull
 - [composer install]
-- setup:upgrade
-- cache:clean
+- rm -rf var/cache/*
 
 +++
 @title[Happy]
@@ -544,6 +543,16 @@ bin/magento config:set --lock-env dev/css/minify_files 0
 ```
 
 +++
+
+#### Local Clean Installations
+
+<br>
+
+- Issue: [#16317](https://github.com/magento/magento2/pull/16317)
+- Workaround: [cweagans/composer-patches](https://patch-diff.githubusercontent.com/raw/magento/magento2/pull/16317.diff)
+
++++
+
 #### Js translations
 
 <br>
