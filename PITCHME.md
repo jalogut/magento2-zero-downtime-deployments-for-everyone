@@ -261,7 +261,7 @@ Config dump
 <br>
 
 ```bash
-# Dump scopes and themes (>=2.2.5 -> app:config:dump scopes themes)
+# Dump scopes and themes (>=2.2.6 -> app:config:dump scopes themes)
 bin/magento app:config:dump
 
 # Dump system settings for static content
