@@ -407,7 +407,6 @@ Setup Continuos Integration/Delivery system: [https://dev.to/jalogut](https://de
 
 +++?gist=jalogut/a7d05c3326bc2dd2206ed269577d3b87&lang=groovy&title=Source: Jenkinsfile
 
-@[9-11,13-14,16-17](Branch to Server)
 @[21-22,24-25](Get code)
 @[30-31](Build)
 @[34,36](Deploy)
