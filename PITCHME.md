@@ -174,17 +174,6 @@ bin/magento setup:upgrade --keep-generated
 - config:import:status (<span style="color:#f46f25">>= 2.2.5</span>)
 
 +++
-#### Workaround
-config:import:status
-
-<br>
-
-```bash
-bin/magento config:set workaround/check/config_status 1
-# Check output == "please run app:config:import"
-```
-
-+++
 @title[Zero downtime accomplished]
 
 #### Zero Downtime accomplished!
@@ -246,7 +235,7 @@ Config propagation in files
 
 +++
 
-#### Fixed >=2.2.5
+#### Improved >=2.2.6
 
 <br>
 
