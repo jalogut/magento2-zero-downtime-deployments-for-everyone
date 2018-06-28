@@ -412,6 +412,7 @@ Setup Continuos Integration/Delivery system: [https://dev.to/jalogut](https://de
 +++
 @title[jenkinsfile example]
 [Jenkinsfile](https://github.com/jalogut/magento2-project-template-22/blob/master/Jenkinsfile)
+
 ![Jenkinsfile](assets/img/jenkinsfile.png)
 
 
