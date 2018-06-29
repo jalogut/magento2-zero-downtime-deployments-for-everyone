@@ -499,10 +499,10 @@ cron:install --force
 +++
 
 #### Local Config
-(build pipeline only)
+
 <br>
 
-- Issue: [PR #12361](https://github.com/magento/magento2/pull/12361)
+- Issue: [PR #12361](https://github.com/magento/magento2/pull/12361) (build pipeline only)
 
 Workaround
 
@@ -518,10 +518,10 @@ bin/magento config:set --lock-env dev/css/minify_files 0
 +++
 
 #### Local Clean Installations
-(build pipeline only)
+
 <br>
 
-- Issue: [#16317](https://github.com/magento/magento2/pull/16317)
+- Issue: [#16317](https://github.com/magento/magento2/pull/16317) (build pipeline only)
 - Workaround: [cweagans/composer-patches](https://patch-diff.githubusercontent.com/raw/magento/magento2/pull/16317.diff)
 
 +++
