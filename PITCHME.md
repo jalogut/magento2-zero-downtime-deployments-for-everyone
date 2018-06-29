@@ -443,7 +443,7 @@ OPcache, Varnish, ...
 
 ```bash
 # Add varnish purge in env.php
-magento setup:config:set --http-cache hosts=<hostname or ip>:<listen port>
+bin/magento setup:config:set --http-cache hosts=<hostname or ip>:<listen port>
 ```
 
 +++
@@ -499,7 +499,7 @@ cron:install --force
 +++
 
 #### Local Config
-
+(build pipeline only)
 <br>
 
 - Issue: [PR #12361](https://github.com/magento/magento2/pull/12361)
@@ -518,7 +518,7 @@ bin/magento config:set --lock-env dev/css/minify_files 0
 +++
 
 #### Local Clean Installations
-
+(build pipeline only)
 <br>
 
 - Issue: [#16317](https://github.com/magento/magento2/pull/16317)
