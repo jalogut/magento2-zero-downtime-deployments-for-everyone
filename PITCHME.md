@@ -289,6 +289,7 @@ Build system
 ```bash
 # Generate files
 bin/magento setup:di:compile
+# IMPORTANT: "-f" required. Generate statics without the need of a DB.
 bin/magento setup:static-content:deploy -f [languages1] ... [languagesN]
 # Create artifact
 tar --exclude-from=../artifact.excludes -czf ${ARTIFACT_FILENAME} .
