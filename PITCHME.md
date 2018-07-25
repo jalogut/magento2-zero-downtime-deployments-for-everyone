@@ -3,7 +3,7 @@
 ## Zero Downtime 
 ## Deployments for Everyone
 
-<span style="font-family:Helvetica Neue; font-weight:bold;color:#f46f25;">Juan Alonso - @Jalogut</span>
+@css[bio](Juan Alonso - @Jalogutx)
 
 ---
 @title[Deployment definition]
@@ -13,12 +13,14 @@
 @title[Agenda 1]
 ## Agenda
 
-* **Intro**
-* <span style="opacity: 0.2;">Right deployment</span>
-* <span style="opacity: 0.2;">Zero Downtime (>=2.2)</span>
-* <span style="opacity: 0.2;">Build Pipeline (>=2.2)</span>
-* <span style="opacity: 0.2;">M2 Deployer Plus</span>
-* <span style="opacity: 0.2;">CI/CD</span>
+@ul[faded](false)
+* @css[li-focused](Intro)
+* Right deployment
+* Zero Downtime (>=2.2)
+* Build Pipeline (>=2.2)
+* M2 Deployer Plus
+* CI/CD
+@ulend
 
 @fa[arrow-down]
 
@@ -68,12 +70,14 @@
 @title[Agenda 2]
 ## Agenda
 
-* <span style="opacity: 0.2;">Intro</span>
-* **Right deployment**
-* <span style="opacity: 0.2;">Zero Downtime (>=2.2)</span>
-* <span style="opacity: 0.2;">Build Pipeline (>=2.2)</span>
-* <span style="opacity: 0.2;">M2 Deployer Plus</span>
-* <span style="opacity: 0.2;">CI/CD</span>
+@ul[faded](false)
+* Intro
+* @css[li-focused](Right deployment)
+* Zero Downtime (>=2.2)
+* Build Pipeline (>=2.2)
+* M2 Deployer Plus
+* CI/CD
+@ulend
 
 @fa[arrow-down]
 
@@ -149,12 +153,14 @@ bin/magento setup:upgrade --keep-generated
 @title[Agenda 3]
 ## Agenda
 
-* <span style="opacity: 0.2;">Intro</span>
-* <span style="opacity: 0.2;">Right deployment</span>
-* **Zero Downtime (>=2.2)**
-* <span style="opacity: 0.2;">Build Pipeline (>=2.2)</span>
-* <span style="opacity: 0.2;">M2 Deployer Plus</span>
-* <span style="opacity: 0.2;">CI/CD</span>
+@ul[faded](false)
+* Intro
+* Right deployment
+* @css[li-focused](Zero Downtime (>=2.2))
+* Build Pipeline (>=2.2)
+* M2 Deployer Plus
+* CI/CD
+@ulend
 
 @fa[arrow-down]
 
@@ -171,7 +177,7 @@ bin/magento setup:upgrade --keep-generated
 <br>
 
 - setup:db:status
-- config:import:status (<span style="color:#f46f25">>= 2.2.5</span>)
+- config:import:status (@color[#f46f25](>>= 2.2.5))
 
 +++
 @title[Zero downtime accomplished]
@@ -196,12 +202,14 @@ bin/magento setup:upgrade --keep-generated
 @title[Agenda 4]
 ## Agenda
 
-* <span style="opacity: 0.2;">Intro</span>
-* <span style="opacity: 0.2;">Right deployment</span>
-* <span style="opacity: 0.2;">Zero Downtime (>=2.2)</span>
-* **Build Pipeline (>=2.2)**
-* <span style="opacity: 0.2;">M2 Deployer Plus</span>
-* <span style="opacity: 0.2;">CI/CD</span>
+@ul[faded](false)
+* Intro
+* Right deployment
+* Zero Downtime (>=2.2)
+* @css[li-focused](Build Pipeline (>=2.2))
+* M2 Deployer Plus
+* CI/CD
+@ulend
 
 @fa[arrow-down]
 
@@ -319,12 +327,14 @@ bin/magento setup:upgrade --keep-generated
 @title[Agenda 5]
 ## Agenda
 
-* <span style="opacity: 0.2;">Intro</span>
-* <span style="opacity: 0.2;">Right deployment</span>
-* <span style="opacity: 0.2;">Zero Downtime (>=2.2)</span>
-* <span style="opacity: 0.2;">Build Pipeline (>=2.2)</span>
-* **M2 Deployer Plus**
-* <span style="opacity: 0.2;">CI/CD</span>
+@ul[faded](false)
+* Intro
+* Right deployment
+* Zero Downtime (>=2.2)
+* Build Pipeline (>=2.2)
+* @css[li-focused](M2 Deployer Plus)
+* CI/CD
+@ulend
 
 @fa[arrow-down]
 
@@ -374,12 +384,14 @@ bin/dep deploy-artifact [<stage>]
 @title[Agenda 6]
 ## Agenda
 
-* <span style="opacity: 0.2;">Intro</span>
-* <span style="opacity: 0.2;">Right deployment</span>
-* <span style="opacity: 0.2;">Zero Downtime (>=2.2)</span>
-* <span style="opacity: 0.2;">Build Pipeline (>=2.2)</span>
-* <span style="opacity: 0.2;">M2 Deployer Plus</span>
-* **CI/CD**
+@ul[faded](false)
+* Intro
+* Right deployment
+* Zero Downtime (>=2.2)
+* Build Pipeline (>=2.2)
+* M2 Deployer Plus
+* @css[li-focused](CI/CD)
+@ulend
 
 @fa[arrow-down]
 
@@ -573,13 +585,13 @@ bin/magento setup:static-content:deploy fr_FR
 
 <br>
 
-- Slides: <span style="font-size:0.7em;">[jalogut/magento2-zero-downtime-deployments-for-everyone](https://gitpitch.com/jalogut/magento2-zero-downtime-deployments-for-everyone/master)</span>
+- Slides: [@size[0.7em](jalogut/magento2-zero-downtime-deployments-for-everyone)](https://gitpitch.com/jalogut/magento2-zero-downtime-deployments-for-everyone/master)
 
-- M2 Deployer Plus: <span style="font-size:0.7em;">[jalogut/magento2-deployer-plus](https://github.com/jalogut/magento2-deployer-plus)</span>
+- M2 Deployer Plus: [@size[0.7em](jalogut/magento2-deployer-plus)](https://github.com/jalogut/magento2-deployer-plus)
 
-- Project Example: <span style="font-size:0.7em;">[jalogut/magento2-project-template-22](https://github.com/jalogut/magento2-project-template-22)</span>
+- Project Example: [@size[0.7em](jalogut/magento2-project-template-22)](https://github.com/jalogut/magento2-project-template-22)
 
----?image=assets/img/about-me.png
+---?image=assets/img/about-me.png&size=contain
 @title[About me]
 
 ---
