@@ -15,3 +15,18 @@
   border: 0;
   box-shadow: none;
 }
+
+.bio {
+  color:#f46f25;
+  font-weight: bold !important;
+  font-family: Helvetica Neue !important;
+}
+
+.reveal ul.faded li {
+  color: lightgray;
+}
+
+.li-focused {
+  color: black;
+  font-weight: bold;
+}
